@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<h1>Number Sense and Algebra</h1>
+<p>1.{{tagline}}</p>
+<input type="radio" id="" name="question 1" value="">
+<label for="2">2</label>
+<input type="radio" id="" name="question 1" value="">
+<label for="1">1</label>
+<input type="radio" id="" name="question 1" value="">
+<label for="4">4</label>
+<button id ="submit" onclick="checkRadioButton()">Submit</button>
+<button id = "Show hint" onclick = "showHint()">Show Hint</button>
+<button id = "show solution" onclick = "showSolution()">Show Solution</button>
+<p>2.{{tagline2}}</p>
+<input type = "text" name ="question 2" value = "">
+<button id ="submit" onclick="checkText()">Submit</button>
+<button id = "Show hint" onclick = "showHint()">Show Hint</button>
+<button id = "Show solution" onclick = "showSolution()">Show Solution</button>
+<br>
+<p>3.{{tagline3}}</p>
+<select id="choices" name="choices">
+<option value = ""></option>
+<option value=""> </option>
+<option value=""> </option>
+</select>
+<button id ="submit" onclick="checkDropDown()">Submit</button>
+<button id = "Show hint" onclick = "showHint()">Show Hint</button>
+<button id = "Show solution" onclick = "showSolution()">Show Solution</button>
+<br>
+<button id ="showScore" onclick="showScore()">Show Score</button>
+<button id = "reset" onclick = "reset()">Reset</button>
+<button id = "home" onclick="location.href='home.html';">Home</button>
+<script src="script.js"></script>
+</html>

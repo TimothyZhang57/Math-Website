@@ -1,0 +1,85 @@
+/*CSS file for my website*/
+/*Adds css to the heading 1 element*/
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: Garamond;
+  }
+/*Adds css to the heading 2 element*/
+ h2{
+    text-align: center; 
+    font-size: 55px;
+    position:relative;
+    top:-190px;
+}
+/*Adds css to the images*/
+  img{
+  position: absolute;
+  top:30px;
+  left:420px;
+  height: 600px;
+  }
+/*Adds css to the buttons*/
+  button{
+  font-size: 18px;
+  font-family: Garamond;
+  }
+  /*Adds css to the paragraphs*/
+  p{
+  font-size: 40px;
+  font-family: Garamond;
+  }
+  /*Adds css to the labels for the choices*/
+  label{
+  font-size: 30px;
+  font-family: Garamond;
+  }
+  /*Adds css to the reset, home and extra help buttons*/
+  .EndingButtons{
+    position: relative;
+    left: 500px;
+  }
+  /*Adds css to the links to the subjects*/
+  .subject{
+  text-align:center;
+  font-size:60px;
+  position: relative;
+  left: 450px;
+  }
+  /*Adds css to the links to the grades*/
+  .grade{
+  text-align:center;
+  font-size:36px;
+  position: relative;
+  left: 575px;
+  top:-190px;
+  }
+  /*Adds css to the links to the pictures that are a part of the questions*/
+  .Qpicture{
+    height: 140px;
+    position: relative;
+    left: 500px;
+    top:-20px;
+  }
+  /*Adds css to the links to the extra help links*/
+  .Extra{
+    text-align:center;
+    font-size:36px;
+    position: relative;
+    left: 450px;
+  }
+  /*Adds css to the links to the logo*/
+  .Logo{
+    height: 650x;
+    position: relative;
+    top:-125px;
+    left: 110px;
+  }
+  /*Adds css to the extra help headings*/
+  .ExtraHeading{
+      text-align: center; 
+      font-size: 55px;
+      position:relative;
+      top:-10.5px;
+      left:-50px;
+  }

@@ -1,0 +1,44 @@
+<!--Creates the HTML page for Number Sense and Algebra-->
+<!--Refer to the comments on the Analytic Geometry(9) page-->
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Number Sense and Algebra</h1>
+<p> 1.{{question}}</p>
+<input type="radio" id="1" name="question 1" ng-model="buttonValue" value={{AlgebraQ1C1}}>
+<label for=AlgebraQ1C1>{{AlgebraQ1C1}}</label>
+<input type="radio" id="2" name="question 1"ng-model="buttonValue" value={{AlgebraQ1C2}}>
+<label for="AlgebraQ1C2">{{AlgebraQ1C2}}</label>
+<input type="radio" id="3" name="question 1"ng-model="buttonValue" value={{AlgebraQ1C3}>
+<label for="AlgebraQ1C3">{{AlgebraQ1C3}}</label>
+<button id ="submit1" ng-click="checkRadioButton(buttonValue, AlgebraAnswer1); disableButton1()"ng-disabled = 'Disabled1'>Submit</button>
+<button class = "Show hint" ng-click = "showHint(AlgebraHint1)">Show Hint</button>
+<button id = "Show Solution1" ng-click = "showSolution(AlgebraSolution1)"ng-disabled = 'Enabled1'>Show Solution</button>
+<p>2.{{question3}}</p>
+<input type = "text" name ="question 2" id = "Question" value = "" ng-model = "Value">
+<button id ="submit2" ng-click="checkText(Value,AlgebraAnswer3); disableButton2()"ng-disabled = 'Disabled2'>Submit</button>
+<button class = "Show hint" ng-click = "showHint(AlgebraHint3)">Show Hint</button>
+<button id = "Show Solution2" ng-click = "showSolution(AlgebraSolution3)"ng-disabled = 'Enabled2'>Show Solution</button>
+<br>
+<p>3.{{question2}}</p>
+<select id="choices" name="choices"ng-model = "myChoice">
+<option value = {{AlgebraQ3C1}}>{{AlgebraQ3C1}}</option>
+<option value={{AlgebraQ3C2}}>{{AlgebraQ3C2}}</option>
+<option value={{AlgebraQ3C3}}>{{AlgebraQ3C3}}</option>
+</select>
+<button id ="submit3" ng-click="checkDropDown(myChoice,AlgebraAnswer2);disableButton3()"ng-disabled = 'Disabled3'>Submit</button>
+<button class = "Show hint" ng-click = "showHint(AlgebraHint2)">Show Hint</button>
+<button id = "Show Solution3" ng-click = "showSolution(AlgebraSolution2)"ng-disabled = 'Enabled3'>Show Solution</button>
+<br>
+<button class ="EndingButtons" ng-click="showScore()">Show Score</button>
+<button class ="EndingButtons" ng-click = "reset()">Reset</button>
+<button class ="EndingButtons" ng-click="goHome();">Home</button>
+<button class ="EndingButtons" ng-click="goExtraHelp();">Extra Resources</button>
+</body>
+</html>

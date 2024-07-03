@@ -1,0 +1,2 @@
+//Allows the angular application to use the app routes and the controllers
+angular.module('MathWebsite', ['ngRoute', 'appRoutes', 'MainCtrl', 'NerdCtrl', 'NerdService', 'GeekCtrl', 'GeekService', 'MathCtrl', 'linearRelationsCtrl', 'MeasurementsCtrl','AnalyticCtrl','QuadraticCtrl','Analytic10Ctrl','TrigCtrl','CharacterCtrl', 'ExponentCtrl', 'DiscreteCtrl', 'TrigonometricCtrl','LogAndExponentCtrl','Trigonometric12Ctrl','RationalAndPolyCtrl','Character12Ctrl']);

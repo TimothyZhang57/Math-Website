@@ -1,0 +1,62 @@
+<!--Creates the HTML page for analytic geometry 9-->
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Analytic Geometry</h1>
+<!--Adds the first question-->
+<p> 1.{{question3}}</p>
+<!--Creates the radio buttons for the choices-->
+<input type="radio" id="1" name="question 1" ng-model="buttonValue" value={{Q1C1}}>
+<label for="Q1C1">{{Q1C1}}</label>
+<input type="radio" id="2" name="question 1"ng-model="buttonValue" value={{Q1C2}}>
+<label for="Q1C2">{{Q1C2}}</label>
+<input type="radio" id="3" name="question 1"ng-model="buttonValue" value={{Q1C3}>
+<label for="Q1C3">{{Q1C3}}</label>
+<!--Creates the submit button which becomes disabled after clicked to stop the user from submitting multiple times which would mess up the score system. This button also checks the answer and tells them if they did it correclty or not-->
+<button id ="submit1" ng-click="checkRadioButton(buttonValue, Answer3); disableButton1()"ng-disabled = 'Disabled1'>Submit</button>
+<!--Creates the show hint button which alerts the user with the hint-->
+<button class = "Show hint" ng-click = "showHint(Hint3)">Show Hint</button>
+<!--Creates the show solution button which is intially disabled to prevent the user from immediately looking at the solution but get enabled after the user submits their answer. This allows them to check the solution and see how to do the question-->
+<button id = "Show Solution1" ng-click = "showSolution(Solution3)"ng-disabled = 'Enabled1'>Show Solution</button>
+<!--Adds the second question-->
+<p>2.{{question}}</p>
+<!--Creates the text field for entering in the answer-->
+<input type = "text" name ="question 2" id = "Question" value = "" ng-model = "Value">
+<!--Creates the submit button which becomes disabled after clicked to stop the user from submitting multiple times which would mess up the score system. This button also checks the answer and tells them if they did it correclty or not-->
+<button id ="submit2" ng-click="checkText(Value,Answer1); disableButton2()"ng-disabled = 'Disabled2'>Submit</button>
+<!--Creates the show hint button which alerts the user with the hint-->
+<button class = "Show hint" ng-click = "showHint(Hint1)">Show Hint</button>
+<!--Creates the show solution button which is intially disabled to prevent the user from immediately looking at the solution but get enabled after the user submits their answer. This allows them to check the solution and see how to do the question-->
+<button id = "Show Solution2" ng-click = "showSolution(Solution1)"ng-disabled = 'Enabled2'>Show Solution</button>
+<br>
+<!--Adds the third question-->
+<p>3.{{question2}}</p>
+<!--Adds the dropdownlist choices-->
+<select id="choices" name="choices"ng-model = "myChoice">
+<option value = {{Q3C1}}>{{Q3C1}}</option>
+<option value={{Q3C2}}>{{Q3C2}}</option>
+<option value={{Q3C3}}>{{Q3C3}}</option>
+</select>
+<!--Creates the submit button which becomes disabled after clicked to stop the user from submitting multiple times which would mess up the score system. This button also checks the answer and tells them if they did it correclty or not-->
+<button id ="submit3" ng-click="checkDropDown(myChoice,Answer2);disableButton3()"ng-disabled = 'Disabled3'>Submit</button>
+<!--Creates the show hint button which alerts the user with the hint-->
+<button class = "Show hint" ng-click = "showHint(Hint2)">Show Hint</button>
+<!--Creates the show solution button which is intially disabled to prevent the user from immediately looking at the solution but get enabled after the user submits their answer. This allows them to check the solution and see how to do the question-->
+<button id = "Show Solution3" ng-click = "showSolution(Solution2)"ng-disabled = 'Enabled3'>Show Solution</button>
+<br>
+<!--Adds the showscore button-->
+<button class ="EndingButtons" ng-click="showScore()">Show Score</button>
+  <!--Adds the reset button that resets the score and -->
+<button class ="EndingButtons" ng-click = "reset()">Reset</button>
+  <!--Adds the home button that returns the user to the home screen-->
+<button class ="EndingButtons" ng-click="goHome();">Home</button>
+  <!--Adds the extra help button that takes the user to the extra help page-->
+<button class ="EndingButtons" ng-click="goExtraHelp();">Extra Resources</button>
+</body>
+</html>

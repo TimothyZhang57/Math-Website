@@ -1,0 +1,40 @@
+<!--Creates the HTML page for grade 12 Trigonometric Functions 12-->
+<!--Refer to the comments on the Analytic Geometry(9) page-->
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>Trigonometric Functions</h1>
+<p>1.{{question3}}</p>
+<input type = "text" name ="question 2" id = "Question" value = "" ng-model = "Value">
+<button id ="submit2" ng-click="checkText(Value,Answer3); disableButton1()"ng-disabled = 'Disabled1'>Submit</button>
+<button class = "Show hint" ng-click = "showHint(Hint3)">Show Hint</button>
+<button id = "Show Solution2" ng-click = "showSolution(Solution3)"ng-disabled = 'Enabled1'>Show Solution</button>
+<br>
+<p>2.{{question}}</p>
+<input type = "text" name ="question 2" id = "Question" value = "" ng-model = "Value2">
+<button id ="submit2" ng-click="checkText(Value2,Answer1); disableButton2()"ng-disabled = 'Disabled2'>Submit</button>
+<button class = "Show hint" ng-click = "showHint(Hint1)">Show Hint</button>
+<button id = "Show Solution2" ng-click = "showSolution(Solution1)"ng-disabled = 'Enabled2'>Show Solution</button>
+<br>
+<p>3.{{question2}}</p>
+<select id="choices" name="choices"ng-model = "myChoice">
+<option value = {{Q3C1}}>{{Q3C1}}</option>
+<option value={{Q3C2}}>{{Q3C2}}</option>
+<option value={{Q3C3}}>{{Q3C3}}</option>
+</select>
+<button id ="submit3" ng-click="checkDropDown(myChoice,Answer2);disableButton3()"ng-disabled = 'Disabled3'>Submit</button>
+<button class = "Show hint" ng-click = "showHint(Hint2)">Show Hint</button>
+<button id = "Show Solution3" ng-click = "showSolution(Solution2)"ng-disabled = 'Enabled3'>Show Solution</button>
+<br>
+<button class ="EndingButtons" ng-click="showScore()">Show Score</button>
+<button class ="EndingButtons" ng-click = "reset()">Reset</button>
+<button class ="EndingButtons" ng-click="goHome();">Home</button>
+<button class ="EndingButtons" ng-click="goExtraHelp();">Extra Resources</button>
+</body>
+</html>
